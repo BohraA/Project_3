@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Video Listing</title>
+
+    <!-- Bootstrap -->
+	
+	<link href="css/stylesheet.css" rel="stylesheet">
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<header class="formHeader">
+		<h2 class="no-margin">Register To Enjoy Free Download!</h2>
+	</header>
+	
+	<section class="registeredMembers">
+		<span>Registered Members : 4373</span>
+		<span>Exclusive Members : 107</span>
+	</section>
+	
+	<section class="videoForm_section">
+		<div class="container">
+			<form action="" name="registration">
+				<label for="firstname">First Name</label>
+				<input type="text" name="firstname" id="firstname" placeholder="John"/>
+
+				<label for="lastname">Last Name</label>
+				<input type="text" name="lastname" id="lastname" placeholder="Doe"/>
+
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="john@doe.com"/>
+
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+				
+				<div class="formButtons">
+					<button type="submit">Register</button>
+					<button type="submit" class="cancelBtn margin-left-24">Cancel</button>
+				</div>
+				<div class="clear-fix"></div>
+			</form>
+			
+			<div class="clear-fix"></div>
+		</div>
+	</section>
+	
+	<footer>
+		<p class="no-margin">COPYRIGHT &copy; 2016 WORLD WIDE MEDIA <span></span> THE TIMES OF INDIA. ALL RIGHTS RESERVED.
+	</footer>
+   
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+	
+	<script>
+		$("document").ready(function(){
+			$('.cancelBtn').on('click', function (e) {
+				e.preventDefault();
+				window.location.href = "movie.html";
+			});	
+		});
+		// Wait for the DOM to be ready
+		$(function() {
+		  // Initialize form validation on the registration form.
+		  // It has the name attribute "registration"
+		  $("form[name='registration']").validate({
+			// Specify validation rules
+			rules: {
+			  // The key name on the left side is the name attribute
+			  // of an input field. Validation rules are defined
+			  // on the right side
+			  firstname: "required",
+			  lastname: "required",
+			  email: {
+				required: true,
+				// Specify that email should be validated
+				// by the built-in "email" rule
+				email: true
+			  },
+			  password: {
+				required: true,
+				minlength: 5
+			  }
+			},
+			// Specify validation error messages
+			messages: {
+			  firstname: "Please enter your firstname",
+			  lastname: "Please enter your lastname",
+			  password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long"
+			  },
+			  email: "Please enter a valid email address"
+			},
+			// Make sure the form is submitted to the destination defined
+			// in the "action" attribute of the form when valid
+			submitHandler: function(form) {
+				form.submit();
+			}
+		  });
+		});
+	</script>
+  </body>
+</html>
