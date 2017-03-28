@@ -1,0 +1,954 @@
+body{
+	margin:0px;
+}
+.mm-menu{
+	background: #3b3b3b;
+    border-color: #d4d4d4;
+    color: #fff;
+}
+.mm-menu .mm-listview{
+	border-color: #d4d4d4;
+}
+.mm-menu .mm-navbar a, .mm-menu .mm-navbar>*{
+	color:#fff;
+}
+/*** Header start ***/
+header{
+	max-height: 284px;
+}
+header div.main_container{
+	width: 100%;
+	background-color: #000;
+	min-height: 75px;
+	position:relative;
+}
+header div.main_container div.logo{
+	height: auto;
+	position:relative;
+	float:left;
+	z-index:1;
+}
+header div.main_container div.logo img.hamburger_menu{
+	position: absolute;
+	top: 2.675em;
+	left: 2.875em;
+}
+.img-responsive{
+	height:auto;
+}
+div.menuListing{
+	position:absolute;
+	top: 40%;
+    left: 27%;
+    color: #fff;
+	font-weight:bold;
+}
+.no-margin{
+	margin:0px;
+}
+.no-padding{
+	padding:0px;
+}
+div.menuListing ul li{
+	list-style-type:none;
+	float:left;
+	padding-left: 2.188em;
+	text-spacing: 0.063em;	
+}
+div.menuListing ul li:first-child{
+	padding-left:0px;
+}
+div.menuListing ul li a, div.menuListing1 ul li a{
+	text-decoration:none;
+	color: #fff;
+}
+div.menuListing ul li a:hover , div.menuListing ul li a:focus {
+	border-bottom: 1px solid red;
+	padding-bottom:2px;
+}
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+div.menuListing1{
+	position:absolute;
+    color: #fff;
+	font-weight:bold;
+	right: 1%;
+	top: 34%;
+}
+div.menuListing1 ul li{
+	list-style-type:none;
+	float:left;
+}
+div.menuListing1 ul li a{
+	display: inline-block;
+	background: url('../images/icons.png') no-repeat -10px -7px;
+	width: 23px;
+	height: 32px;
+	padding-left: 0.5em;
+}
+div.menuListing1 ul li.twitterIcon a{
+	background-position: -53px -8px; 
+}
+div.menuListing1 ul li.galleryIcon a{
+	background-position: -94px -7px; 
+}
+div.menuListing1 ul li.username a{
+	background-image:none; 
+	position: relative; 
+	width: 100px;
+}
+div.menuListing1 ul li.username a img{
+	position: absolute;
+	right: 110%;
+    bottom: 5%;	
+}
+.sep{
+	width: 99%;
+	border: 1px solid #3d3d3d;
+	box-shadow: 0px 3px 10px 5px #3d3d3d;
+}
+.clear-fix{
+	clear:both;
+}
+header div.contentSlider{
+	max-height: 209px;
+	position: relative;
+	bottom: 58px;
+	z-index:0;
+}
+.bx-wrapper{
+	margin:0px;
+}
+.bx-wrapper .bx-viewport{
+	min-height: 209px;
+	border:none;
+	border-bottom: 2px solid #d4d4d4;
+	margin-left: 5px;
+}
+.bx-viewport li{
+	position:relative;
+}
+.bx-viewport li img{
+	width: 100%;
+	max-height: 209px;
+	background-color: #424242;
+}
+.bx-viewport li p{
+	position:absolute;
+	top: 35%;
+	margin: 0px auto;
+	left: 9%;
+	font-style: italic;
+	font-size: 1.05em;
+	width: 80%;
+	line-height: 1.375em;
+	font-weight:bold;
+	max-height: 65px;
+	overflow: hidden;
+	color: #fff;
+	letter-spacing: 0.063em;
+}
+.bx-wrapper .bx-pager{
+	color: #fff;
+	right: 1%;
+	bottom: 13%;
+}
+.bx-wrapper .bx-pager .bx-pager-item{
+	padding-bottom: 0.313em;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+	background:#fff;
+}
+.bx-wrapper .bx-pager{
+	width:2%;
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:hover{
+	background: #f0b83e;
+}
+ul.bxslider li p.nameOfFDP{
+	top: 75%;
+	text-align: right;
+    color: #d69c4b;
+    font-size: 17px;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+ul.bxslider{
+	margin:0px;
+}
+.bx-controls-direction{
+	display:none;
+}
+
+/***** Section Start ***/
+section.filmMakingSection{
+	min-height: 1170px;
+	background-color:#000;
+	padding-left: 3em;
+	padding-bottom: 1.875em;
+}
+section.filmMakingSection h3{
+	letter-spacing: 0.063em;
+	color: #fff;
+    padding-top: 2.5em;
+	width:60%;
+	float:left;
+}
+section.filmMakingSection div.leftDiv{
+	position:relative;
+	padding: 0px;
+    margin-top: 2.188em;
+	width: 55%;
+	float:left;
+	box-shadow: 3px -4px 4px 1px #916b23;
+}
+section.filmMakingSection div.leftSection{
+	max-height: 1021px;
+	overflow-y: scroll;
+	background-color: #e8ac3c;
+	padding: 30px;
+	position:relative;
+	padding:30px 0px 0px 47px;
+}
+section.filmMakingSection div.leftDiv::after{
+	content: '';
+	background: url('../images/wave.jpg') repeat-y 0px 0px;
+	position:absolute;
+	top: 0%;
+    left: -1%;
+	height:100%;
+	width: 25px;
+}
+
+.leftSection{
+    scrollbar-face-color: #4a310a;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+}
+
+/* Let's get this party started */
+.leftSection::-webkit-scrollbar {
+    width: 11px;
+}
+/* Handle */
+.leftSection::-webkit-scrollbar-thumb {
+    background: #876a20; 
+}
+
+section.filmMakingSection div.leftDiv div.dropdown{
+	padding-bottom: 2.188em;
+}
+section.filmMakingSection div.leftDiv div.dropdown label{
+	font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 0.938em;
+}
+section.filmMakingSection div.leftDiv div.dropdown select{
+	height: 28px;
+    width: 29%;
+    padding: 5px 5px 5px 10px;
+    background-color: #595959;
+    color: #fff;
+}
+section.filmMakingSection div.leftDiv div.videoLoader{
+	float:left;
+}
+.easyzoom{
+	float:left;
+	margin-right: 2.813em;
+}
+.easyzoom img{
+	position:relative;
+}
+.easyzoom span{
+	position: absolute;
+    right: 0;
+    bottom: 0%;
+    color: #fff;
+    background-color: #808080;
+    font-size: 11px;
+    padding: 3px;
+}
+section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer{
+	margin-top: 0.983em;
+}
+section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer a{
+	color: #000;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:0.875em;
+}
+section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer p.header, 
+section.filmMakingSection div.leftDiv div.videoDescription p.header{
+	font-size: 12px;
+    font-style: italic;
+    color: #fae0a2;
+    font-weight: bold;
+}
+section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer p.paragraph{
+	padding-right: 1.188em;
+	max-height: 80px;
+	overflow: hidden;
+	font-size: 0.9em;
+	line-height: 1.25em;
+}
+.sep1{
+	border: 1px solid #fabe57;
+	margin: 1.250em 2.5em 1.250em -0.63em;
+}
+div.loadMore{
+	width: 99%;
+	min-height: 50px;
+	background-color: #f5c25d;
+	color:#e6a640;
+}
+div.loadMore p{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1em;
+    font-size: 1.125em;
+}
+section.filmMakingSection div.rightDiv{
+	float:left;
+	padding-left: 3em;
+	margin-top: -0.75em;
+	width: 35%;
+}
+section.filmMakingSection div.rightDiv h5{
+	color:#fff;
+	letter-spacing: 0.063em;
+	margin-bottom: 1.8em;
+}
+section.filmMakingSection div.rightDiv ul li{
+	font-size:0.813em;
+	list-style-type: decimal;
+	color: #e8ac3c;
+}
+section.filmMakingSection div.rightDiv ul li p{
+	color: #fff;
+	padding-left: 0.313em;
+	margin-bottom: 1.875em;
+}
+/**** Section End ***/
+
+/**** Footer Start ***/
+footer{
+	min-height: 42px;
+	background-color: #232829;
+}
+footer p{
+	color:#7e8281;
+	text-align:center;
+	padding-top: 1.5em;
+	font-size:0.688em;
+}
+footer span{
+    border-left: 2px solid #7e8281;
+	padding-right: 0.3em;
+}
+/**** Footer End ***/
+
+/***** Second Page Section Start ***/
+section.moviePageSection{
+	min-height:1110px;
+}
+video{
+	width: 97%;
+    height: 490px;
+	object-position: 0px 0px;
+	object-fit: initial;
+}
+div.embeddedVideo{
+	position:relative;
+}
+div.embeddedVideo div#play{
+	position: absolute;
+    height: 20%;
+    width: 17%;
+    z-index: 1;
+    background-size: 100% 100%;
+    top: 33%;
+    left: 40%;
+	opacity:0.3;
+}
+div.embeddedVideo div.playVideo{
+	 background: url('../images/videoPlayer1.png') no-repeat transparent;
+}
+.pauseVideo{
+	background: url('../images/pauseVideo.png') no-repeat transparent;
+}
+.sep2{
+	margin-right:0.5em;
+}
+.videoDuration{
+	position: absolute;
+    bottom: 7%;
+    right: 3%;
+    background-color: #000;
+    color: #fff;
+    padding: 0.313em;
+    font-size: 0.688em;
+}
+div.videoDescription h2{
+	font-size: 1em;
+}
+div.videoDescription img{
+	padding-right:1.250em;
+	cursor: pointer;
+}
+div.videoDescription p.briefDescription{
+	padding-right:1.250em;
+	font-size: 0.875em;
+    line-height: 1.18em;
+}
+.padding-bottom-45{
+	padding-bottom: 2.813em;
+}
+div.backbtnDiv{
+	float: right;
+    padding-top: 23px;
+    width: 51%;
+	cursor:pointer;
+}
+div.backbtnDiv button{
+	background-image: url('../images/backBtn.jpg');
+    width: 82px;
+    height: 35px;
+    border: 1px solid #292929;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+}
+div.backbtnDiv button:focus{
+	outline-color: #d4d4d4;
+}
+/***** Second Page Section End ***/
+
+/***** Form Page Section Start ***/
+header.formHeader{
+	background-color: #2f3642;
+	min-height: 60px;
+	width: 100%
+}
+header.formHeader h2{
+    color: #fff;
+    text-align: center;
+    padding-top: 16px;
+	letter-spacing: 1px;
+}
+section.registeredMembers{
+	background-color:#e8b53f;
+	min-height: 30px;
+	padding-top: 10px;
+}
+section.registeredMembers span{
+	font-size: 13px;
+    font-weight: bold;
+    padding-left: 35px;
+}
+section.videoForm_section{
+    height: 460px;
+	padding:30px;
+	background: url('../images/camera.jpg') no-repeat;
+	background-size:  35% 100%;
+	background-color: #424242;
+}
+section.videoForm_section .container {
+  width: 500px;
+  margin: 10px auto;
+}
+form {
+  padding: 20px;
+  background: #3b3b3b;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-left:50px;
+  position:relative;
+}
+form label,
+form input,
+form button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+}
+form label{
+	margin-bottom:5px;
+}
+form input {
+margin-bottom:20px;
+  height: 30px;
+  line-height: 25px;
+  background: #fff;
+  color: #000;
+  padding: 0 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+form button , button.cancelBtn{
+  height: 30px;
+  line-height: 30px;
+  background: #e67e22;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 47%;
+  float:left;
+  border:none;
+}
+form .error {
+  color: #ff0000;
+}
+form div.formButtons{
+	height: 35px;
+}
+.margin-left-24{
+	margin-left:24px;
+}
+/***** Form Page Section End ***/
+
+/**** iPAD- Portrait ***/
+@media (min-width: 768px) and (max-width: 979px) {
+	header {
+		max-height: 262px;
+	}
+	header div.main_container{
+		min-height: 110px;
+	}
+	header div.main_container div.logo img.hamburger_menu{
+		top: 1.77em;
+		left: 1.5em;
+	}
+	header div.main_container div.logo img.img-responsive{
+		max-width: 230px;
+	}
+	div.menuListing{
+		top:20%;
+		left:29%;
+		font-size: 0.7em;
+	}
+	div.menuListing ul li{
+		padding-left: 2.5em;
+	}
+	div.menuListing1{
+		right: 4%;
+		top: 12%;
+	}
+	div.menuListing1 ul li{
+		display:none;
+	}
+	div.menuListing1 ul li.username {
+		display:block;
+	}
+	div.menuListing1 ul li.username a{
+		width: auto;
+	}
+	div.menuListing1 ul li.username a span{
+		display:none;
+	}
+	div.menuListing1 ul li.username a img{
+		right: 85%;
+		bottom: 5%;
+	}
+	.bx-viewport li p{
+		top: 29%;
+		font-size: 0.9em;
+		line-height: 1.6em;
+		max-height: 90px;
+	}
+	.bx-wrapper .bx-pager{
+		width: 7%;
+	}
+	.bx-wrapper .bx-pager .bx-pager-item{
+		display:inherit;
+	}
+	section.filmMakingSection{
+		padding-left:2em;
+	}
+	section.filmMakingSection div.leftDiv{
+		min-height: 1021px;
+		max-width:95%;
+		box-shadow: none;
+		width: initial;
+	}
+	div.loadMore{
+		width: 635px;
+	}
+	section.filmMakingSection div.rightDiv{
+		clear: both;
+		padding-left: 2em;
+		padding-top: 3.25em;
+		padding-right: 2em;
+		width: initial;	
+		float:none;
+	}
+	section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer p.paragraph{
+		font-size:1em;
+	}
+	section.filmMakingSection div.leftDiv div.dropdown label{
+		font-size:0.9em;
+	}
+	section.filmMakingSection div.leftDiv div.dropdown select{
+		height: 31px;
+		width:33%;
+	}
+	video{
+		width: 100%;
+	}
+	 div.videoDescription h2{
+		 font-size: 1.2em;
+	 }
+	 section.moviePageSection div.leftDiv{
+		min-height: 905px;
+	 }
+	 div.backbtnDiv{
+		width: 16%;
+	}
+	section.filmMakingSection div.rightDiv ul li p{
+		padding-right: 1.125em;
+	}
+	.videoDuration{
+		right: 0%;
+	}
+	header.formHeader{
+		min-height: 70px;
+	}
+	section.registeredMembers{
+		min-height: 40px;
+	}
+	section.videoForm_section{
+		min-height: 800px;
+		background-size: 35% 80%;
+	}
+	section.videoForm_section .container{
+		margin: 36px 0px 10px 26%;
+	}
+	form label{
+		margin-bottom: 10px;
+	}
+	form input{
+		margin-bottom: 25px;
+	}
+}
+/*** iPAD - landscape ***/
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+	div.menuListing{
+		top:45%;
+		font-size:0.75em;
+		left:32%;
+	}
+	div.menuListing ul li{
+		padding-left: 1.6em;
+	}
+	div.menuListing1{
+		right:0%;
+	}
+	div.menuListing1 ul li.username a{
+		width: 85px;
+	}
+	div.menuListing1 ul li.username a img{
+		right: 100%;
+	}
+	section.filmMakingSection{
+		padding-left: 1em;
+	}
+	section.filmMakingSection div.leftDiv{
+		width:58%;
+		box-shadow:none;
+	}
+	div.loadMore{
+		width: 97%;
+	}
+	.easyzoom{
+		margin-right: 1em;
+	}
+	section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer p.paragraph, section.filmMakingSection div.rightDiv ul li{
+		font-size: 1em;
+	}
+	 section.filmMakingSection div.rightDiv ul li p{
+		 line-height: 1.250em;
+	 }
+	 section.filmMakingSection div.leftDiv div.dropdown select{
+		 width: 45%;
+	 }
+	 section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer a{
+		 letter-spacing: 0.063em;
+	 }
+	 video{
+		width: 100%;
+		height: 470px;
+	 }
+	 div.backbtnDiv{
+		 width: 52.5%;
+	 }
+	 div.videoDescription h2{
+		 font-size: 1em;
+	 }
+	 div.videoDescription img{
+		width: 120px;
+	 }
+	 .videoDuration{
+		 right:0%;
+		 bottom: 11%;
+	 }
+	 section.videoForm_section{
+		height: 566px;
+	}
+	section.videoForm_section .container{
+		width: 700px;
+	}
+	form{
+		margin-left:23%;
+	}
+} 
+
+/**** Smartphones - Portrait Start ***/
+@media (max-width: 767px){
+	header {
+		max-height: 219px;
+	}
+	header div.main_container{
+		min-height: 95px;
+	}
+	header div.main_container div.logo img.hamburger_menu{
+		top: 1.1em;
+		left: 1em;
+		width:20px;
+	}
+	header div.main_container div.logo img.img-responsive{
+		width: 160px;
+	}
+	div.menuListing, .sep{
+		display:none;
+	}
+	div.menuListing1{
+		right: 0%;
+		top:4%;
+	}
+	div.menuListing1 ul li a{
+		padding-left: 0.5em;
+		width: 20px;
+		height: 23px;
+	}
+	div.menuListing1 ul li.username a{
+		width: 70px;
+	}
+	div.menuListing1 ul li.username a img {
+		right: 97%;
+		bottom: 0%;
+		width: 25px;
+		top:1%;
+	}
+	header div.contentSlider,.bx-viewport li img{
+		max-height: 180px;
+	}
+	.bx-wrapper .bx-viewport{
+		min-height:180px;
+	}
+	.bx-viewport li p{
+	    top: 18%;
+		font-size: 0.75em;
+		max-height: 105px;
+		line-height: 1.8em;
+	}
+	ul.bxslider li p.nameOfFDP{
+		top: 80%;	
+		font-size: 10px;
+		letter-spacing: 0.1em;
+	}
+	.bx-wrapper .bx-pager{
+		width: 6%;
+	}
+	section.filmMakingSection{
+		padding-left: 1em;
+	}
+	section.filmMakingSection h3{
+		font-size: 0.750em;
+		padding-top: 2em;
+		padding-bottom: 1em;
+		float:none;
+	}
+	section.filmMakingSection div.leftDiv{
+		padding-top: 0px;
+		margin-top: 0px;
+		width: 95%;
+		padding-left: 0px;
+		box-shadow: none;
+		float:none;
+	}
+	div.loadMore{
+		width: 93%;
+	}
+	section.filmMakingSection div.leftDiv div.dropdown label{
+		font-size: 0.6em;
+	}
+	section.filmMakingSection div.leftDiv div.dropdown select{
+		font-size: 0.625em;
+		width: 50%;
+		padding: 5px;
+	}
+	section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer a{
+		font-size: 0.8em;
+	}
+	section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer p.paragraph{
+		padding-right: 2em;
+	}
+	.sep1{
+		margin: 1.250em 0.5em 1.250em -0.63em;
+	}
+	section.filmMakingSection div.rightDiv{
+		padding-left: 1em;
+		margin-top: 2.25em;
+		width:100%;
+	}
+	section.filmMakingSection div.rightDiv ul li p{
+		padding-right: 2em;
+	}
+	footer p{
+		padding-top: 2em;
+		font-size: 0.5em;
+	}
+	div.menuListing1 ul li.username span{
+		display:none;
+	}
+	div.menuListing1 ul li.username a{
+		width:0px;
+	}
+	.easyzoom{
+		margin-bottom: 1em;
+	}
+	div.videoDescription h2{
+		font-size: 0.88em;
+	}
+	video{
+		height: auto;
+	}
+	div.videoDescription img{
+		width: 25%;
+		margin-top: 5px;
+	}
+	.videoDuration{
+		bottom: 23%;
+	}
+	header.formHeader h2 {
+		font-size: 16px;
+		padding-top: 20px;
+	}
+	section.videoForm_section{
+		background-image:none;
+	}
+	section.videoForm_section .container{
+		width: 100%;
+	}
+	form{
+		margin-left:0px;
+	}
+	form label{
+		margin-bottom: 10px;
+	}
+	form input{
+		margin-bottom:25px;
+	}
+	form div.formButtons button{
+		width: 100%;
+	}
+	button.cancelBtn{
+		margin-left:0px;
+	}
+	section.registeredMembers span{
+		font-size: 12px;
+		padding-left: 17px;
+	}
+}
+/**** Smartphones - Portrait End ***/
+
+/*** Smartphones - Landscape Start ***/
+@media (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
+	.bx-wrapper .bx-pager .bx-pager-item{
+		display:inherit;
+	}
+	div.menuListing1{
+		right:0%;
+	}
+	div.menuListing1 ul li.username a{
+		width:85px;
+	}
+	div.menuListing1 ul li a{
+		padding-left: 1em;
+	}
+	.bx-viewport li p{
+		font-size:0.9em;
+	}
+	ul.bxslider li p.nameOfFDP{
+		font-size: 11px;
+	}
+	section.filmMakingSection div.leftDiv{
+		width: 88%;
+	}
+	section.filmMakingSection div.rightDiv ul li p{
+		padding-right:3.7em;
+	}
+	div.menuListing1 ul li.username span{
+		display:block;
+	}
+	section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer p.paragraph{
+		max-height: 75px;
+	}
+	div.backbtnDiv{
+		width: 17.5%;
+	}
+	div.videoDescription h2{
+		font-size: 1em;
+	}
+	.videoDuration {
+		bottom: 13%;
+	}
+}
+/*** Smartphones - Landscape End ***/
+
+@media (min-width: 320px) and (max-width: 320px){
+	section.filmMakingSection div.leftDiv div.dropdown label{
+		font-size: 0.5em;
+	}
+	section.filmMakingSection div.leftDiv div.dropdown select{
+		width: 41%;
+	}
+	.easyzoom img{
+		width: 230px;
+	}
+	section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer a{
+		font-size:0.7em;
+	}
+	section.filmMakingSection div.leftDiv div.videoLoader .videoLoaderContainer p.paragraph{
+		padding-right: 3em;
+		max-height: 75px;
+	}
+	footer p{
+		font-size: 0.46em;
+	}
+	div.videoDescription img {
+		width: 30%;
+		margin-top: 0px;
+	}
+	.videoDuration {
+		bottom: 28%;
+	}	
+}
+@media (min-width: 560px) and (max-width: 568px) and (orientation:landscape){
+	.videoDuration {
+		bottom: 16%;
+	}	
+}
